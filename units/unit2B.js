@@ -63,5 +63,9 @@ console.log(union(arr));
 /*Challenge 7
 Construct a function objOfMatches that accepts two arrays and a callback. objOfMatches will build an object and return it. To build the object, objOfMatches will test each element of the first array using the callback to see if the output matches the corresponding element (by index) of the second array. If there is a match, the element from the first array becomes a key in an object, and the element from the second array becomes the corresponding value.*/
 
+function objOfMatches(arr1, arr2, callback) {
+    return callback(arr1, arr2);
+  }
+
 /*Challenge 8
 Construct a function multiMap that will accept two arrays: an array of values and an array of callbacks. multiMap will return an object whose keys match the elements in the array of values. The corresponding values that are assigned to the keys will be arrays consisting of outputs from the array of callbacks, where the input to each callback is the key.*/
